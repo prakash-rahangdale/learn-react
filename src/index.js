@@ -7,13 +7,13 @@ const App = () => {
     const buttonText = { text:'click me'};
     return (
     <div>
-        <label className="label" for="name">Enter Name:</label>
+        <label className="label" htmlFor="name">Enter Name:</label>
         <input id="name" type="text"/>
         <button style={{backgroundColor: 'blue', color: 'white'}}>{buttonText.text}</button>
     </div>
     );
 };
-//we cant show object as text
+//use htmlFor in jsx in place of for
 
 //take a react component and show it on the screen
 ReactDOM.render(
