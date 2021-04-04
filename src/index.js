@@ -4,16 +4,16 @@ import ReactDOM from 'react-dom';
 
 //create a react component
 const App = () => {
-    const buttonText = 'click me';
+    const buttonText = { text:'click me'};
     return (
     <div>
         <label className="label" for="name">Enter Name:</label>
         <input id="name" type="text"/>
-        <button style={{backgroundColor: 'blue', color: 'white'}}>{buttonText}</button>
-        {/* using {} we refrence diffrent js variable inside our jsx */}
+        <button style={{backgroundColor: 'blue', color: 'white'}}>{buttonText.text}</button>
     </div>
     );
 };
+//we cant show object as text
 
 //take a react component and show it on the screen
 ReactDOM.render(
