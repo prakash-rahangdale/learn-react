@@ -4,19 +4,13 @@ import ReactDOM from 'react-dom';
 
 //create a react component
 const App = () => {
+    const buttonText = 'click me';
     return (
-
-    //html styling
-    // <div>
-    //     <label class="label" for="name">Enter Name:</label>
-    //     <input id="name" type="text"/>
-    //     <button style="background-color: blue; color: white;">submit</button>
-    // </div>
-    
     <div>
-        <label class="label" for="name">Enter Name:</label>
+        <label className="label" for="name">Enter Name:</label>
         <input id="name" type="text"/>
-        <button style={{backgroundColor: 'blue', color: 'white'}}>submit</button>
+        <button style={{backgroundColor: 'blue', color: 'white'}}>{buttonText}</button>
+        {/* using {} we refrence diffrent js variable inside our jsx */}
     </div>
     );
 };
